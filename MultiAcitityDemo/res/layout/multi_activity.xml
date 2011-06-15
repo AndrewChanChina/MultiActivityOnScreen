@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:layout_height="fill_parent">
+    <LinearLayout android:gravity="center_horizontal"
+        android:background="#f00" android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/cust_title" android:textColor="@android:color/white"
+            android:textSize="28sp" android:text="title" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    
+     
+	    <ScrollView android:measureAllChildren="true" android:id="@+id/containerBody"
+	        android:layout_weight="1" android:layout_height="wrap_content"
+	        android:layout_width="wrap_content">
+	    </ScrollView>
+	    <ScrollView android:measureAllChildren="true" android:id="@+id/containerBody2"
+	        android:layout_weight="1" android:layout_height="wrap_content"
+	        android:layout_width="wrap_content">
+	    </ScrollView>
+	    <ScrollView android:measureAllChildren="true" android:id="@+id/containerBody3"
+	        android:layout_weight="1" android:layout_height="wrap_content"
+	        android:layout_width="wrap_content">
+	    </ScrollView><!--
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:orientation="horizontal"
+    android:layout_height="wrap_content">   
+    </LinearLayout>
+    
+    --><LinearLayout android:background="@android:color/black"
+        android:layout_gravity="bottom" android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <!-- 功能模块按钮1 -->
+        <ImageView android:id="@+id/btnModule1" android:src="@android:drawable/ic_dialog_dialer"
+            android:layout_marginLeft="7dp" android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- 功能模块按钮2 -->
+        <ImageView android:id="@+id/btnModule2" android:src="@android:drawable/ic_dialog_info"
+            android:layout_marginLeft="7dp" android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- 功能模块按钮3 -->
+        <ImageView android:id="@+id/btnModule3" android:src="@android:drawable/ic_dialog_alert"
+            android:layout_marginLeft="7dp" android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
